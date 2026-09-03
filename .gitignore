@@ -1,0 +1,40 @@
+# Runtime SEC data and generated retrieval artifacts
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/indexes/*
+!data/indexes/.gitkeep
+data/metadata/*
+!data/metadata/.gitkeep
+data/cache/
+
+# Secrets / databases
+.env
+*.db
+*.sqlite
+*.sqlite3
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Models / IDE / OS
+.cache/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+*.bak
+*.pre-*

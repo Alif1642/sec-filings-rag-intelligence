@@ -1,0 +1,24 @@
+services:
+  api:
+    build: .
+    env_file:
+      - .env
+    command: python -m uvicorn api.main:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+
+  streamlit:
+    build: .
+    env_file:
+      - .env
+    environment:
+      API_BASE_URL: http://api:8000
+    command: streamlit run app/streamlit_app.py --server.address 0.0.0.0 --server.port 8501
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      - api

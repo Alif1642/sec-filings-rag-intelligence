@@ -1,0 +1,26 @@
+[
+  {
+    "ticker": "AAPL",
+    "form": "10-K",
+    "question": "What was total revenue in the latest fiscal year?",
+    "expected_metric": "revenue"
+  },
+  {
+    "ticker": "MSFT",
+    "form": "10-K",
+    "question": "What was net income in the latest fiscal year?",
+    "expected_metric": "net_income"
+  },
+  {
+    "ticker": "AMZN",
+    "form": "10-K",
+    "question": "Compare revenue between the latest two fiscal years.",
+    "expected_metric": "revenue"
+  },
+  {
+    "ticker": "AAPL",
+    "form": "10-K",
+    "question": "What are the major risk factors described in the filing?",
+    "expected_section_pattern": "Risk Factors"
+  }
+]
