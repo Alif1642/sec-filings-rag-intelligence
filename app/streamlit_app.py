@@ -1,8 +1,13 @@
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
 import httpx
 import pandas as pd
 import streamlit as st
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from src.config import get_settings
 
