@@ -1,4 +1,4 @@
-# SEC Filings RAG Intelligenc
+# SEC Filings RAG Intelligence
 
 > A citation-grounded financial research platform that combines SEC EDGAR filing retrieval, structure-aware document processing, hybrid BM25 + FAISS search, cross-encoder reranking, SEC XBRL Company Facts, deterministic financial calculations, FastAPI, and Streamlit.
 
