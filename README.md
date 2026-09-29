@@ -2026,6 +2026,6 @@ Daffodil International University
 
 ---
 
-## Licenses
+## License
 
 This project is distributed under the repository's MIT License.
